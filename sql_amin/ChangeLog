@@ -1,0 +1,92 @@
+phpMyAdmin - ChangeLog
+======================
+
+4.8.6 (not yet released)
+- issue #14478 phpMyAdmin no longer streams the export data
+- issue #14514 Tables with SYSTEM VERSIONING show up as views instead of tables
+- issue #14515 Values cannot be edited in SYSTEM VERSIONING tables with INVISIBLE timestamps
+- issue        Fix header icon on server plugins page
+- issue #14298 Fixed error 500 on MultiTableQuery page when a empty query is passed
+- issue #14402 Fixed fatal javascript error while adding index to a new column
+- issue #14896 Fixed issue with plus/minus icon when refreshing an expanded database
+- issue #14922 Fixed json encode error in export
+- issue #13975 Fixed missing query time in German (fix decimal number format issue)
+- issue #14503 Fixed JavaScript events not activating on input (sql bookmark issue)
+- issue #14898 Fixed Bottom table is blocked in database list (left panel)
+- issue #14425 Fixed Null Checkbox automatically unmarked
+- issue #14870 Display correct date and time in Zip files
+- issue #14763 Fixed the loading symbol not appearing when refreshing the navigation
+- issue #14607 Count rows only if needed
+- issue #14832 Show Designer combo boxes when adding a constraint
+- issue #14948 Fix change password is not showing password strength difference at the second attempt
+- issue #14868 Fix edit view
+- issue #14943 Fixed loading Forever when creating new view without filling any field
+- issue #14843 Fix Bookmark::get() id matching SQL
+- issue #14734 Fixed invalid default value for bit field
+- issue #14311 Fixed undefined index in setup script
+- issue #14991 Fixed TypeError in GIS editor
+- issue        Fixed GIS data editor for multi server setup
+- issue #14312 Fixed type error in setup script when adding new server
+- issue #14053 Fix missed padding on query results
+- issue #14826 Fixed javascript error PMA_messages is not defined
+- issue        Show error message if config-set fails and not "loading..." forever
+- issue #14359 Prevent multiple error modals, and error-report request spamming from script
+- issue        Fixed error reporting javascript errors on multi server setup
+- issue        Fixed wrong property name on TableStructureController
+- issue #14811 Fix SHOW FULL TABLES FROM when a table is locked
+- issue #14916 Fix bug when creating or editing views
+- issue #14931 Fixed php error when using a query like SELECT 1 INTO @a; SELECT @a; in inline query edit
+- issue #15074 Make the server logo visible on theme "original"
+- issue #15077 Fixed incorrect page numbers
+- issue #14205 Fixed "No tables found in database" when you delete all tables from last page
+- issue #14957 Virtuality is not selected when editing generated column (added virtuality(stored) option for mariadb)
+- issue #14853 Insert page should not allow entering things into virtual columns
+- issue #15110 Fixed TypeError e.preventDefaulut is not a function
+- issue #15115 Improved label in Settings export, clarifying that it's a JSON file
+- issue #14816 Fixed [designer] Cannot read property 'style' of null
+- issue        Fixed [designer] Add new tables with database/table list modal
+- issue        Fixed query format on multi server setup
+- issue        Fixed remove partitioning on multi server setup
+- issue        Fixed normalization
+- issue        Fixed 'RESET SLAVE' button on replication slave
+- issue        Fixed sending a php error report on multi server setup
+- issue        Fixed downloading of monitor parameters for IE 11, Edge, Chrome and others
+- issue #15141 Fixed php notice Undefined index: designer_settings
+- issue #12729 Fixed sticky table header over dropdown menu
+- issue #15140 Fixed edit link does not work on failed insert
+- issue #14334 Fixed export table structure shows rows fields
+- issue #15010 Fixed empty SQL preview modal on tbl_relation
+- issue #14673 Fixed innodb & MySQL 8: DYNAMIC & COMPRESSED ROW_FORMAT missing
+- issue        Fixed empty success message when adding a new INDEX from left panel
+- issue #15150 Fixed generate password hidden on second open of change password modal
+- issue        Fixed import XML data with leading zeros
+- issue #15036 Fixed missing input fields checks for MaxSizeForInputField
+- issue #15119 Fixed uninterpreted HTML on Settings->Export page
+- issue #15159 Fixed missing query time and database in console
+- issue #13713 Fixed column comments in the floating table header
+- issue #15177 Fixed label alignment on login page
+- issue #15210 Fixed a typo in the english name of the Albanian language
+- issue        Fixed issue when resetting charset in import.php
+
+4.8.5 (2019-01-25)
+- issue        Developer debug data was saved to the PHP error log
+- issue #14217 Fix issue when adding user on MySQL 8.0.11
+- issue #13788 Exporting a view structure based on another view with a sub-query throws no database selected error
+- issue #14635 Fix PHP error in GitRevision, error in processing request, error code 200
+- issue #14787 Cannot execute stored procedure
+- issue        Add Burmese language
+- issue #14794 Not responding to click, frozen interface, plugin Text_Plain_Sql error
+- issue #14786 Table level Operations functions missing
+- issue #14791 PHP warning, db_export.php#L91 urldecode()
+- issue #14775 Export to SQL format not available for tables
+- issue #14782 Error message shown instead of two-factor QR code when adding 2fa to a user
+- issue        [security] Arbitrary file read/delete relating to MySQL LOAD DATA LOCAL INFILE and an evil server instance (PMASA-2019-1)
+- issue        [security] SQL injection in Designer (PMASA-2019-2)
+
+         --- Older ChangeLogs can be found on our project website ---
+                     https://www.phpmyadmin.net/old-stuff/ChangeLogs/
+
+# vim: et ts=4 sw=4 sts=4
+# vim: ft=changelog fenc=utf-8
+# vim: fde=getline(v\:lnum-1)=~'^\\s*$'&&getline(v\:lnum)=~'\\S'?'>1'\:1&&v\:lnum>4&&getline(v\:lnum)!~'^#'
+# vim: fdn=1 fdm=expr
